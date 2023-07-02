@@ -1,4 +1,4 @@
-use std::{collections::HashMap, io::BufRead};
+use std::collections::HashMap;
 
 pub(crate) fn solve_part1(input: impl Into<String>) -> i32 {
     parse_input(input.into())
