@@ -10,12 +10,11 @@ pub(crate) fn solve_part1(input: impl Into<String>) -> i32 {
 pub(crate) fn solve_part2(input: impl Into<String>) -> Vec<i32> {
     let input_vec = parse_input(input.into());
     let mut flat_input = flatten(input_vec);
-    
-    flat_input.sort();
-    
-    flat_input[flat_input.len()-3..].into()
-}
 
+    flat_input.sort();
+
+    flat_input[flat_input.len() - 3..].into()
+}
 
 fn parse_input(input: String) -> Vec<Vec<i32>> {
     input[..]

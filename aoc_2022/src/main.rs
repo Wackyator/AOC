@@ -1,11 +1,9 @@
 #![allow(unused)]
-
 mod day1;
-
-use day1::*;
+mod day2;
 
 fn main() {
-    let file_content = include_str!("../input.txt");
-    println!("{}", solve_part1(file_content));
-    println!("{:?}", solve_part2(file_content).iter().fold(0, |acc, x| acc + x));
+    let input = include_str!("../input.txt");
+    println!("{}", day2::solve_part1(input));
+    println!("{}", day2::solve_part2(input));
 }
